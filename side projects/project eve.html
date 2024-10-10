@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project eve.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="form box">
+          <p>loan amount (kes)</p>
+          <input
+            type="number"
+            placeholder="enter loan amount"
+            id="amount"
+            min=" 10000"
+            max="1000000000"
+            maxlength="10"
+            required
+            class="input"
+          />
+          <p>Interest amount (%)</p>
+          <input
+            type="number"
+            placeholder="enter interest amount"
+            id="interest"
+            min=" 1"
+            max="99"
+            maxlength="4"
+            required
+            step="0.01"
+            class="input"
+          />
+          <p>loan tenure (yr/mo)</p>
+          <input
+            type="number"
+            placeholder="enter loan duration"
+            id="loan tenure"
+            min=" 1"
+            max="360"
+            maxlength="3"
+            required
+            class="input"
+          />
+          <div class="tenure">
+            <input type="radio" name="btn" id="year" checked />
+            <label for="year">yearly</label>
+            <input type="radio" name="btn" id="monthly" />
+            <label for="month">monthly</label>
+          </div>
+          <button class="calculator" id="claculator">calculate</button>
+        </div>
+        <div class="box output">
+          <p>EMI</p>
+          <div id="emi"></div>
+          <p>total interest</p>
+          <div id="total interest"></div>
+          <p>total payment</p>
+          <div id="total payment"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
